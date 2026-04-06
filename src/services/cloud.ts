@@ -5,7 +5,7 @@ export function initCloud() {
   if (process.env.TARO_ENV === 'weapp') {
     Taro.cloud.init({
       // 上线前替换为真实云开发环境 ID
-      env: 'resume-checker-prod',
+      env: 'cloud1-8g9hxzdd7226305f',
     })
   }
 }
