@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "dist/",
   "projectname": "resume-checker",
-  "description": "简历体检 - AI 简历优化微信小程序",
-  "appid": "touristappid",
+  "description": "简历改造 - AI 一键改造简历",
+  "appid": "wxd0154e6126fcd190",
   "setting": {
     "urlCheck": true,
     "es6": false,
