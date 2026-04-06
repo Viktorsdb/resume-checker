@@ -80,7 +80,7 @@ export default function HistoryPage() {
               </Text>
             </View>
             <View className='card-right'>
-              <Text className={`card-score score-${level}`}>{item.score}分</Text>
+              <Text className='card-score' style={{ color: level.color }}>{item.score}分</Text>
               <Text className='card-arrow'>›</Text>
             </View>
           </View>

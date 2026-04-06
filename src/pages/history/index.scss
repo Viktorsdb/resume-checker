@@ -81,11 +81,7 @@
       font-size: 32rpx;
       font-weight: 700;
 
-      &.score-优秀 { color: #22c55e; }
-      &.score-良好 { color: #3b82f6; }
-      &.score-一般 { color: #f59e0b; }
-      &.score-较差 { color: #ef4444; }
-      &.score-不匹配 { color: #94a3b8; }
+      // color set via inline style
     }
 
     .card-arrow {
