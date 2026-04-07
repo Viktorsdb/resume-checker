@@ -1,112 +1,139 @@
-// 首页样式
 .index-page {
   min-height: 100vh;
-  padding: 48rpx 32rpx;
+  padding: 32rpx;
   padding-bottom: 120rpx;
 }
 
-// 主视觉
+// Hero
 .hero {
   text-align: center;
-  padding: 64rpx 0 48rpx;
+  padding: 80rpx 0 48rpx;
 
-  .hero-icon {
-    font-size: 96rpx;
+  .hero-badge {
+    display: inline-block;
+    font-size: 22rpx;
+    font-weight: 600;
+    color: #FF6B35;
+    background: rgba(255, 107, 53, 0.08);
+    padding: 8rpx 24rpx;
+    border-radius: 24rpx;
     margin-bottom: 24rpx;
+    letter-spacing: 2rpx;
   }
 
   .hero-title {
     display: block;
-    font-size: 56rpx;
-    font-weight: 700;
-    color: #f1f5f9;
-    margin-bottom: 16rpx;
+    font-size: 64rpx;
+    font-weight: 800;
+    color: #1A1A2E;
+    letter-spacing: 4rpx;
+    margin-bottom: 20rpx;
   }
 
   .hero-subtitle {
     display: block;
     font-size: 28rpx;
-    color: #94a3b8;
-    line-height: 1.6;
+    color: #6B7280;
+    line-height: 1.8;
   }
 }
 
-// 功能亮点
-.features {
-  margin: 40rpx 0;
+// 步骤流程
+.steps {
+  margin: 32rpx 0;
+  padding: 36rpx 32rpx;
 
-  .feature-item {
+  .step {
     display: flex;
     align-items: center;
-    padding: 28rpx 32rpx;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1rpx solid rgba(255, 255, 255, 0.08);
-    border-radius: 20rpx;
-    margin-bottom: 20rpx;
 
-    .feature-icon {
-      font-size: 48rpx;
-      margin-right: 24rpx;
+    .step-num {
+      width: 56rpx;
+      height: 56rpx;
+      border-radius: 50%;
+      background: #FF6B35;
+      color: #fff;
+      font-size: 28rpx;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
 
-    .feature-text {
-      flex: 1;
+    .step-content {
+      margin-left: 24rpx;
 
-      .feature-title {
+      .step-title {
         display: block;
         font-size: 30rpx;
         font-weight: 600;
-        color: #f1f5f9;
-        margin-bottom: 4rpx;
+        color: #1A1A2E;
       }
 
-      .feature-desc {
+      .step-desc {
         display: block;
         font-size: 24rpx;
-        color: #94a3b8;
+        color: #9CA3AF;
+        margin-top: 4rpx;
       }
     }
+  }
+
+  .step-line {
+    width: 4rpx;
+    height: 32rpx;
+    background: #E5E7EB;
+    margin-left: 26rpx;
+    margin-top: 8rpx;
+    margin-bottom: 8rpx;
   }
 }
 
 // 数据统计
 .stats {
   display: flex;
-  justify-content: space-around;
-  padding: 32rpx 0;
-  margin: 20rpx 0;
-  background: rgba(99, 102, 241, 0.1);
-  border-radius: 20rpx;
+  align-items: center;
+  justify-content: center;
+  padding: 28rpx 0;
+  margin: 24rpx 0;
 
   .stat-item {
     text-align: center;
+    flex: 1;
 
-    .stat-number {
+    .stat-value {
       display: block;
       font-size: 40rpx;
-      font-weight: 700;
-      color: #818cf8;
+      font-weight: 800;
+      color: #1A1A2E;
     }
 
     .stat-label {
       display: block;
-      font-size: 24rpx;
-      color: #94a3b8;
+      font-size: 22rpx;
+      color: #9CA3AF;
       margin-top: 4rpx;
     }
   }
+
+  .stat-divider {
+    width: 1rpx;
+    height: 48rpx;
+    background: #E5E7EB;
+  }
 }
 
-// 行动按钮
+// CTA
 .cta {
-  margin-top: 40rpx;
+  margin-top: 48rpx;
   padding: 0 16rpx;
 
   .cta-hint {
     display: block;
     text-align: center;
     font-size: 24rpx;
-    color: #64748b;
-    margin-top: 16rpx;
+    color: #9CA3AF;
+    margin-top: 20rpx;
   }
 }

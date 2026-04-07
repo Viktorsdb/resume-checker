@@ -13,8 +13,8 @@
   .loading-spinner {
     width: 80rpx;
     height: 80rpx;
-    border: 4rpx solid rgba(255, 255, 255, 0.1);
-    border-top-color: #818cf8;
+    border: 4rpx solid #E5E7EB;
+    border-top-color: #FF6B35;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 32rpx;
@@ -22,7 +22,7 @@
 
   .loading-text {
     font-size: 30rpx;
-    color: #f1f5f9;
+    color: #1A1A2E;
   }
 }
 
@@ -37,14 +37,14 @@
     display: block;
     font-size: 36rpx;
     font-weight: 700;
-    color: #f1f5f9;
+    color: #1A1A2E;
     margin-bottom: 8rpx;
   }
 
   .page-sub {
     display: block;
     font-size: 26rpx;
-    color: #64748b;
+    color: #9CA3AF;
   }
 }
 
@@ -61,14 +61,14 @@
     .question-num {
       font-size: 28rpx;
       font-weight: 700;
-      color: #818cf8;
+      color: #FF6B35;
     }
 
     .question-type {
       font-size: 22rpx;
       padding: 4rpx 12rpx;
-      background: rgba(99, 102, 241, 0.15);
-      color: #a5b4fc;
+      background: rgba(255, 107, 53, 0.1);
+      color: #FF8C5A;
       border-radius: 6rpx;
     }
   }
@@ -76,7 +76,7 @@
   .question-text {
     display: block;
     font-size: 28rpx;
-    color: #f1f5f9;
+    color: #1A1A2E;
     line-height: 1.6;
     font-weight: 500;
   }
@@ -84,7 +84,7 @@
   .question-detail {
     margin-top: 20rpx;
     padding-top: 20rpx;
-    border-top: 1rpx solid rgba(255, 255, 255, 0.06);
+    border-top: 1rpx solid #E5E7EB;
 
     .detail-block {
       margin-bottom: 16rpx;
@@ -92,14 +92,14 @@
       .detail-label {
         display: block;
         font-size: 24rpx;
-        color: #94a3b8;
+        color: #6B7280;
         margin-bottom: 6rpx;
       }
 
       .detail-text {
         display: block;
         font-size: 26rpx;
-        color: #cbd5e1;
+        color: #374151;
         line-height: 1.7;
       }
     }
@@ -109,7 +109,7 @@
     display: block;
     text-align: center;
     font-size: 24rpx;
-    color: #64748b;
+    color: #9CA3AF;
     margin-top: 16rpx;
   }
 }

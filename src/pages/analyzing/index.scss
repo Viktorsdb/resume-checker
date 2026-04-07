@@ -1,4 +1,3 @@
-// 分析中页面样式
 .analyzing-page {
   min-height: 100vh;
   display: flex;
@@ -6,88 +5,66 @@
   align-items: center;
   justify-content: center;
   padding: 48rpx;
-}
 
-// 脉冲动画区域
-.animation-area {
-  margin-bottom: 64rpx;
-
-  .pulse-ring {
-    position: relative;
-    width: 200rpx;
-    height: 200rpx;
+  .analyze-icon {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40rpx;
 
-    .pulse-ring-inner {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+    .icon-inner {
+      width: 56rpx;
+      height: 56rpx;
+      border: 4rpx solid #E5E7EB;
+      border-top-color: #FF6B35;
       border-radius: 50%;
-      background: rgba(99, 102, 241, 0.2);
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    .pulse-icon {
-      font-size: 80rpx;
-      z-index: 1;
+      animation: spin 1s linear infinite;
     }
   }
-}
 
-@keyframes pulse {
-  0% {
-    transform: scale(0.8);
-    opacity: 1;
+  .analyze-title {
+    display: block;
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 16rpx;
   }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(0.8);
-    opacity: 1;
-  }
-}
 
-// 进度条
-.progress-bar {
-  width: 80%;
-  height: 12rpx;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 6rpx;
-  overflow: hidden;
+  .analyze-status {
+    display: block;
+    font-size: 28rpx;
+    color: #6B7280;
+    margin-bottom: 48rpx;
+  }
 
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #6366f1, #818cf8);
+  .progress-bar {
+    width: 100%;
+    max-width: 500rpx;
+    height: 12rpx;
+    background: #E5E7EB;
     border-radius: 6rpx;
-    transition: width 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 16rpx;
+
+    .progress-fill {
+      height: 100%;
+      background: #FF6B35;
+      border-radius: 6rpx;
+      transition: width 0.5s ease;
+    }
+  }
+
+  .progress-text {
+    display: block;
+    font-size: 24rpx;
+    color: #9CA3AF;
   }
 }
 
-.progress-text {
-  display: block;
-  font-size: 28rpx;
-  color: #818cf8;
-  margin-top: 12rpx;
-  font-weight: 600;
-}
-
-// 步骤文案
-.step-text {
-  display: block;
-  font-size: 30rpx;
-  color: #f1f5f9;
-  margin-top: 48rpx;
-  font-weight: 500;
-}
-
-// 提示
-.hint {
-  display: block;
-  font-size: 24rpx;
-  color: #64748b;
-  margin-top: 16rpx;
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }

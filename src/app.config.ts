@@ -1,4 +1,3 @@
-// 小程序全局配置
 export default defineAppConfig({
   pages: [
     'pages/index/index',
@@ -12,18 +11,17 @@ export default defineAppConfig({
     'pages/profile/index',
   ],
   window: {
-    backgroundTextStyle: 'dark',
-    navigationBarBackgroundColor: '#0f172a',
-    navigationBarTitleText: '简历体检',
-    navigationBarTextStyle: 'white',
-    backgroundColor: '#0f172a',
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#FFFFFF',
+    navigationBarTitleText: '简历改造',
+    navigationBarTextStyle: 'black',
+    backgroundColor: '#F8F9FA',
   },
-  // 底部 Tab 栏
   tabBar: {
-    color: '#94a3b8',
-    selectedColor: '#818cf8',
-    backgroundColor: '#1e293b',
-    borderStyle: 'black',
+    color: '#9CA3AF',
+    selectedColor: '#FF6B35',
+    backgroundColor: '#FFFFFF',
+    borderStyle: 'white',
     list: [
       {
         pagePath: 'pages/index/index',
@@ -39,6 +37,5 @@ export default defineAppConfig({
       },
     ],
   },
-  // 云开发环境 ID（上线前替换为真实环境 ID）
   cloud: true,
 })
